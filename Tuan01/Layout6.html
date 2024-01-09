@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Layout 6</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                padding: 50px;
+                height: 100vh;
+            }
+
+            .wrapper {
+                color: #fff;
+                width: 980px;
+                height: 100%;
+                margin: 0 auto;
+                background-color: #504c16;
+                display: flex;
+                border: 3px solid #000;
+                flex-direction: column;
+                font-size: 1.3rem;
+            }
+
+            .header,
+            .menu,
+            .body,
+            .footer {
+                width: 100%;
+            }
+
+            .header,
+            .footer {
+                flex: 0.1;
+                padding: 7px 10px;
+            }
+
+            .menu {
+                border-top: 3px solid #000;
+            }
+
+            .body {
+                flex: 1;
+                border-top: 3px solid #000;
+                border-bottom: 3px solid #000;
+                display: flex;
+            }
+
+            .section {
+                flex: 0.2;
+            }
+
+            .nav {
+                border-top: 3px solid #000;
+                padding: 0 10px;
+            }
+
+            .section {
+                flex: 1;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                padding: 0 20px 10px;
+            }
+
+            .artical-1 {
+                border-left: 3px solid #000;
+                border-right: 3px solid #000;
+                border-top: 3px solid #000;
+                flex: 1;
+                padding-left: 10px;
+                background-color: #413626;
+            }
+
+            .artical-2 {
+                border: 3px solid #000;
+                flex: 1;
+                padding-left: 10px;
+                background-color: #5c4f46;
+            }
+
+            .aside {
+                flex: 0.3;
+                border-left: 3px solid #000;
+                padding: 0 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">header</header>
+            <nav class="nav">nav</nav>
+            <div class="body">
+                <section class="section">
+                    Section
+                    <div class="artical-1">artical</div>
+                    <div class="artical-2">artical</div>
+                </section>
+                <aside class="aside">aside</aside>
+            </div>
+            <footer class="footer">footer</footer>
+        </div>
+    </body>
+</html>
