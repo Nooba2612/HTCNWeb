@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 1</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body {
+                width: 100vw;
+            }
+
+            .header {
+                color: rgb(195, 66, 66);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .header h1 {
+                text-shadow: 10px 10px 10px rgb(217, 78, 78);
+                margin: 10px 0;
+            }
+
+            .nav {
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: pink;
+                margin-bottom: 10px;
+            }
+
+            .nav .btn {
+                padding: 15px;
+            }
+
+            .menu {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                border-left: 3px solid purple;
+                border-right: 3px solid purple;
+            }
+
+            .menu .item {
+                height: 100%;
+                width: 150px;
+            }
+
+            .menu .item:nth-child(2) {
+                border-left: 3px solid purple;
+                border-right: 3px solid purple;
+            }
+
+            .menu .item a {
+                font-weight: bold;
+                display: block;
+                line-height: 45px;
+                color: white;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            .body {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .body .sidebar {
+                width: 200px;
+            }
+
+            .body .sidebar .category {
+                width: 100%;
+            }
+
+            .body .sidebar .category .item {
+                width: 100%;
+                height: 30px;
+                background-color: pink;
+                border-radius: 20px;
+                margin: 5px 0;
+            }
+
+            .body .sidebar .category img {
+                border-radius: 50%;
+                box-shadow: 7px 10px 20px 0px pink;
+            }
+
+            .body .sidebar .category .item a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                line-height: 30px;
+            }
+
+            .body ul li span {
+                color: red;
+            }
+
+            .body ul li b {
+                color: yellow;
+            }
+
+            .content {
+                width: 900px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .content .title {
+                width: 400px;
+                background-color: pink;
+                letter-spacing: 15px;
+                color: rgb(155, 44, 44);
+                padding: 10px;
+                align-self: center;
+            }
+
+            .content a {
+                color: red;
+            }
+
+            .section {
+                max-width: 400px;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+            }
+
+            .content form {
+                width: 100%;
+                margin: 0 10px;
+            }
+
+            .content form input[type="text"],
+            .content form select {
+                height: 40px;
+                width: 305px;
+                padding-left: 10px;
+                margin: 10px;
+            }
+
+            .content form textarea {
+                width: 635px;
+                margin-left: 10px;
+            }
+
+            .content form .submit-button {
+                width: 605px;
+                text-align: center;
+                margin: 0 5px;
+            }
+
+            .footer {
+                margin-top: 10px;
+                text-align: center;
+                height: 40px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            <header class="header">
+                <h1><i>EXAMPLE CAFE MENU</i></h1>
+            </header>
+            <nav class="nav">
+                <img src="./icons8-home-50.png" height="30px" align="left" />
+                <ul class="menu">
+                    <li class="item"><a href="#">Starter</a></li>
+                    <li class="item"><a href="#">Main Courses</a></li>
+                    <li class="item"><a href="#">Desserts</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" name="find" />
+                    <button type="submit">Go</button>
+                </div>
+            </nav>
+            <div class="body">
+                <div class="sidebar">
+                    <ul class="category">
+                        <li class="item"><a href="#">Cafe Latte</a></li>
+                        <li class="item"><a href="#">Capuchino</a></li>
+                        <li class="item"><a href="#">Ocean Blue</a></li>
+                        <li class="item"><a href="#">Ice-cream Cafe</a></li>
+                        <li class="item"><a href="#">Order Online</a></li>
+                        <img src="./company.png" width="100%" />
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2 class="title">Starter</h2>
+                    <ul>
+                        <li>Chesnut and Mushroom Goujons <span>(v)</span></li>
+                        <li>Goat Cheese<span>(v)</span></li>
+                        <li>
+                            <b>HONEY SOY CHICKEN KEBABS<span>(v)</span></b>
+                        </li>
+                        <li>Seafood Salad<span>(v)</span></li>
+                    </ul>
+                    <a href="#">Back to Top</a>
+                    <h2 class="title">Desserts</h2>
+                    <ul>
+                        <li>Lemon Sorbet <span>(v)</span></li>
+                        <li>Chocolate Mub Pie<span>(v)</span></li>
+                        <li>Pecan Pie<span>(v)</span></li>
+                        <li>Selection of fine Cheese from Around the World<span>(v)</span></li>
+                    </ul>
+                    <a href="#">Back to Top</a>
+                    <h2 class="title">INFORMATION</h2>
+                    <form>
+                        <input type="text" placeholder="First Name" />
+                        <input type="text" placeholder="Last Name" /> <br />
+                        <input type="text" placeholder="Email" />
+                        <input type="text" placeholder="Telephone" /> <br />
+                        <select>
+                            <option value="1">USA</option>
+                            <option value="2">VN</option>
+                        </select>
+                        <input type="radio" name="re" />Vietnamese <input type="radio" name="re" />Foreigner <br />
+                        <textarea name="" id="" placeholder="Comment"></textarea>
+                        <div class="submit-button">
+                            <button>Submit</button>
+                            <button>Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <section class="section">
+                    <h3 style="color: white">Events</h3>
+                    <div class="content" style="width: 90%; text-align: center">
+                        <h4 style="color: white">Regular Meetings</h4>
+                        <img src="./meeting.png" alt="" width="100%" />
+                        <h4 style="color: white">Product Launches</h4>
+                        <img src="./launch.png" alt="" width="100%" />
+                    </div>
+                </section>
+            </div>
+            <div class="footer">
+                <h2 style="color: white">
+                    <i>ABC Company <sup>®</sup> - 12345678 - abccoffee@gmail.com</i>
+                </h2>
+            </div>
+        </main>
+    </body>
+</html>
