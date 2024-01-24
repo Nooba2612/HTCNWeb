@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 6a</title>
+    </head>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+        }
+
+        .main {
+            padding: 20px;
+            margin: 0 auto;
+            width: 600px;
+            background-color: rgb(52, 146, 223);
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .name,
+        .address,
+        .city,
+        .country {
+            width: 100%;
+        }
+
+        .name {
+            display: flex;
+        }
+
+        .name input {
+            width: 140px;
+        }
+
+        .name .first-name > label,
+        .address label {
+            margin-right: 120px;
+        }
+
+        .city {
+            display: flex;
+        }
+
+        .city .city-label {
+            margin-right: 169px;
+        }
+
+        .submit {
+            width: 100%;
+            text-align: center;
+        }
+
+        .radio-input,
+        .checkbox-input {
+            margin-left: 120px;
+        }
+    </style>
+    <body>
+        <main class="main">
+            <header class="header">
+                <h1>Registration Form</h1>
+                <p>Register your Jackson Electronics product here</p>
+            </header>
+            <form>
+                <div class="name">
+                    <div class="first-name">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" />
+                    </div>
+                    <div class="last-name">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" />
+                    </div>
+                </div>
+                <div class="address">
+                    <label for="address-1">Address #1:</label>
+                    <input type="text" name="address-1" /><br />
+                    <label for="address-2">Address #2:</label>
+                    <input type="text" name="address-2" /><br />
+                </div>
+                <div class="city">
+                    <label class="city-label" for="city">City:</label>
+                    <input style="width: 60px" type="text" name="city" />
+                    <label for="state">State:</label>
+                    <input style="width: 30px" type="text" name="state" />
+                    <label for="zip">Zip:</label>
+                    <input style="width: 50px" type="text" style="width: 30px" name="zip" /><br />
+                </div>
+                <div class="country">
+                    <label style="margin-right: 140px" for="country">Country:</label>
+                    <input type="text" id name="country" value="United States" />
+                </div>
+                <br />
+                <hr color="black" />
+                <br />
+                <label style="margin-right: 140px" for="product">Product:</label>
+                <select id="product" name="product">
+                    <option value="1">ScanMaster</option>
+                </select>
+                <br />
+                <label style="margin-right: 90px" for="DateP">Date Purchased:</label>
+                <input type="text" id name="DateP" /><br />
+                <label style="margin-right: 140px" for="Seri">Serial #.</label>
+                <input type="text" id name="Seri" /><br />
+
+                <div class="usefor">
+                    <label for="usefor">useford for.</label>
+                    <div class="radio-input">
+                        <input type="radio" name="usefor" />Home <input type="radio" name="usefor" />Educational
+                        Institution<br />
+                        <input type="radio" name="usefor" />Bussiness <input type="radio" name="usefor" />Other<br />
+                        <input type="radio" name="usefor" value="goverment" />Goverment<br />
+                    </div>
+                </div>
+                <br />
+                <hr color="black" />
+                <br />
+                <label for="system">System (check all that apply):</label>
+                <div class="checkbox-input">
+                    <input type="checkbox" name="system" id="Windown" />Window
+                    <input type="checkbox" name="system" id="Mac" />UNIX<br />
+                    <input type="checkbox" name="system" id="Linux" />Macintosh
+                    <input type="checkbox" name="system" id="other" />Other<br />
+                </div>
+                <br />
+                <hr color="black" />
+                <br />
+                <div class="comment">
+                    <label for="comment">Comments?: </label>
+                    <textarea name="comment" cols="60" rows="15"></textarea> <br />
+                </div>
+                <div class="submit">
+                    <button>Click to register</button>
+                    <button>Click to cancel</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

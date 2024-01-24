@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 6b</title>
+    </head>
+    <style>
+        body {
+            width: 100vw;
+        }
+
+        .main {
+            width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid rgb(74, 117, 236);
+            padding: 10px;
+        }
+
+        .main div {
+            margin-bottom: 5px;
+        }
+    </style>
+    <body>
+        <main class="main">
+            <h1>Contact Us</h1>
+            <fieldset>
+                <legend>Your message</legend>
+                <div>
+                    <label style="margin-right: 60px" for="to">To</label>
+                    <input type="tel" name="to" value="Example Cafe" />
+                </div>
+                <div>
+                    <label style="margin-right: 5px" for="email">Your email</label>
+                    <input type="text" name="email" />
+                </div>
+                <div>
+                    <label style="margin-right: 20px" for="message">Message</label>
+                    <textarea name="message" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <label style="margin-right: 4px" for="file">Attach File</label>
+                    <input type="button" value="Chossen File" />
+                    <label for="file">No file chosen</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>How you found us:</legend>
+                <div>
+                    <label for="how">How did you hear of us</label>
+                    <label for="newsletter">Newsletter</label>
+                </div>
+                <div>
+                    <select name="how">
+                        <option value="Google">Google</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Friend">Advertisement</option>
+                        <option value="Friend">Other</option>
+                    </select>
+                    <br />
+                    <input type="checkbox" name="newsletter" />
+                    <span>Ensure this box is checked if you would like to receive email updates</span>
+                </div>
+                <input type="submit" value="Send message" />
+            </fieldset>
+        </main>
+    </body>
+</html>
