@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 2</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .main {
+                border: 1px solid;
+            }
+
+            .header {
+                height: 100px;
+                border-bottom: 1px solid;
+                background-image: url("./background.png");
+            }
+
+            .nav {
+                float: left;
+                height: 25px;
+                width: 100%;
+                background-color: gray;
+            }
+
+            .menu li {
+                margin-top: 3px;
+                text-indent: 15px;
+                margin-right: 20px;
+                float: left;
+            }
+
+            .menu li a:hover {
+                color: black;
+            }
+
+            .menu li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .content {
+                height: 550px;
+            }
+
+            .footer {
+                height: 100px;
+            }
+
+            .section {
+                margin-left: 20px;
+                width: 60%;
+                height: 100%;
+                float: left;
+                border-right: 1px solid rgba(0, 0, 0, 0.092);
+            }
+
+            .aside {
+                float: left;
+                width: 26%;
+                height: 100%;
+                margin-left: 20px;
+            }
+
+            h2 {
+                color: pink;
+            }
+
+            .menu-left {
+                list-style-type: none;
+            }
+
+            .menu-left li {
+                margin-top: 10px;
+                border-bottom: 1px solid pink;
+            }
+
+            .menu-left li a {
+                text-decoration: none;
+                color: pink;
+            }
+
+            .footer {
+                height: 40px;
+                width: 100%;
+                background-color: gray;
+                color: white;
+                margin-top: 20px;
+                padding-top: 10px;
+                text-indent: 10px;
+            }
+
+            .active {
+                color: black !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <img src="./logo.png" alt="" height="80%" align="left" />
+                <h1 style="color: white; padding-top: 20px">YOKO'S KITCHEN</h1>
+                <h4 style="color: white">JAPANESE COOKING CLASSES</h4>
+                <div class="nav">
+                    <ul class="menu" style="list-style-type: none">
+                        <li><a class="active" href="#">home</a></li>
+                        <li><a href="#">classes</a></li>
+                        <li><a href="#">catering</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <div class="content">
+                <div class="section">
+                    <img
+                        src="./teriyaki.jpg"
+                        alt="Bok Choi"
+                        width="30%"
+                        align="left"
+                        style="border: 10px double white"
+                    />
+                    <h2>Japanese Vegetarian</h2>
+                    <h4 style="color: red">Five week course in London</h4>
+                    <br />
+                    <p>A five week introduction to traditional</p>
+                    <p>Japanese vegetarian meals, teaching you a</p>
+                    <p>selection of rice and noodle dishes.</p>
+                    <br /><br />
+                    <img src="./teriyaki.jpg" alt="" width="30%" align="left" style="border: 10px double white" />
+                    <h2>Sauces Masterclass</h2>
+                    <h4 style="color: red">Sauces Masterclass</h4>
+                    <br />
+                    <p>An intensive one-day course looking at how</p>
+                    <p>to create the most delicious sauces for use in</p>
+                    <p>a range of Japanese cookery.</p>
+                </div>
+                <div class="aside">
+                    <h2>Popular Recipes</h2>
+                    <ul class="menu-left">
+                        <li><a href="#">Yakitori (grilled chicken)</a></li>
+                        <li><a href="#">Tsukune (minced chicken patties)</a></li>
+                        <li><a href="#">Okonomiyaki (savory pancakes)</a></li>
+                        <li><a href="#">Mizutaki (chicken stew)</a></li>
+                    </ul>
+                    <h2>Contact</h2>
+                    <p>Yoko's Kitchen</p>
+                    <p>27 Redchurch Street</p>
+                    <p>Shoreditch</p>
+                    <p>London E2 7DP</p>
+                </div>
+            </div>
+
+            <div class="footer"><sub>® 2011</sub> Yoko's Kitchen</div>
+        </div>
+    </body>
+</html>
