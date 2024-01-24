@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Produce</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .main {
+                position: relative;
+                height: 1000px;
+                background-image: url("../images/background.jpg");
+            }
+
+            .header {
+                height: 150px;
+                width: 100%;
+            }
+
+            .logo {
+                padding-top: 10px;
+                float: left;
+                margin-left: 10px;
+            }
+
+            .nav {
+                float: left;
+                margin-left: 10px;
+                width: 20%;
+                height: 100%;
+                margin-right: 10px;
+            }
+
+            .menu {
+                width: 100%;
+                height: 20%;
+                background-color: white;
+                border: 5px outset;
+            }
+
+            .menu .item {
+                list-style-type: none;
+                height: 30px;
+                padding-left: 10px;
+            }
+
+            .menu .item:hover {
+                background-color: rgba(0, 0, 0, 0.214);
+            }
+
+            .menu .item a {
+                text-decoration: none;
+                display: block;
+                color: purple;
+                line-height: 30px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .content {
+                float: left;
+                width: 75%;
+                height: 100%;
+                border-left: 2px solid green;
+                margin-left: 20px;
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 15px;
+                height: 50px;
+                width: 100%;
+                color: white;
+                text-align: center;
+            }
+
+            .footer p {
+                margin-top: 10px;
+            }
+
+            .content ul {
+                color: white;
+                margin-left: 50px;
+            }
+
+            h1 {
+                letter-spacing: 5px;
+                color: white;
+                width: 600px;
+                height: auto;
+                background-color: green;
+                margin-left: 20px;
+                text-indent: 100px;
+                font-style: italic;
+            }
+
+            h3 {
+                width: 300px;
+                height: auto;
+                margin-left: 20px;
+                text-indent: 10px;
+                color: white;
+                background-color: green;
+            }
+
+            hr {
+                border: 3px solid green;
+            }
+
+            .active {
+                background-color: rgba(0, 0, 0, 0.214);
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            <div class="header">
+                <div class="logo">
+                    <img src="../images/salogo.jpg" alt="" height="100%" />
+                </div>
+            </div>
+            <div class="body">
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="item"><a href="./home.html">Home</a></li>
+                        <li class="item"><a href="./maze.html">The Corn Maze</a></li>
+                        <li class="item"><a href="./haunter.html">The Haunted Maze</a></li>
+                        <li class="item"><a href="./petting.html">Petting Bam</a></li>
+                        <li class="item active"><a href="./produce.html">Produce</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <h1>The Farm Shop</h1>
+                    <br />
+                    <img src="../images/photo5.jpg" alt="" style="float: right" />
+                    <p style="color: white; margin-left: 20px">
+                        The Sunny Acres Farmshop aims to offer the highest quality fresh produce. You can pick your own
+                        or buy it in our shop. Set amidst acres of outstanding natural beauty on the beautiful rolling
+                        hills northeast of Council Bluffs, the Farm Shop is easily reached on Highway G, with easy
+                        access from Interstate 80.
+                        <br />
+                        <br />
+                        The Farm Shop was established over 25 years ago with great success. Our products have won
+                        numerous awards at local festivals and fairs. We also cater to local supermarkets in the Council
+                        Bluffs/Omaha area. Look for our products every Saturday morning from May to October at the
+                        Council Bluffs Farmers' Market.
+                    </p>
+
+                    <br />
+                    <h3>Hours</h3>
+                    <br />
+                    <ul>
+                        <li>Monday - Friday: 9 am - 5 pm</li>
+                        <li>Saturday: 9 am - 3 pm</li>
+                        <li>Pick Your Own Produce is available from May 15 - October 22</li>
+                        <li>The Farm Shop is open year-round</li>
+                    </ul>
+                    <br />
+                    <h3>Directions</h3>
+                    <br />
+                    <ul>
+                        <li>Freshly baked breads and quiches</li>
+                        <li>High quality meats</li>
+                        <li>Cheese and other dairy products</li>
+                        <li>Freshly-picked fruits and vegetables (in season)</li>
+                        <li>Canned goods and preserves</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <hr />
+                <br />
+                <hr />
+                <p>Sunny Acres ☀ Tammy & Brent Nielsen ☀ 1977 Highway G ☀ Council Bluffs, IA 51503</p>
+            </div>
+        </main>
+    </body>
+</html>

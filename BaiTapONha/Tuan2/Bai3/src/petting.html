@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Petting</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .main {
+                position: relative;
+                height: 1000px;
+                background-image: url("../images/background.jpg");
+            }
+
+            .header {
+                height: 150px;
+                width: 100%;
+            }
+
+            .logo {
+                padding-top: 10px;
+                float: left;
+                margin-left: 10px;
+            }
+
+            .nav {
+                float: left;
+                margin-left: 10px;
+                width: 20%;
+                height: 100%;
+                margin-right: 10px;
+            }
+
+            .menu {
+                width: 100%;
+                height: 20%;
+                background-color: white;
+                border: 5px outset;
+            }
+
+            .menu .item {
+                list-style-type: none;
+                height: 30px;
+                padding-left: 10px;
+            }
+
+            .menu .item:hover {
+                background-color: rgba(0, 0, 0, 0.214);
+            }
+
+            .menu .item a {
+                text-decoration: none;
+                display: block;
+                color: purple;
+                line-height: 30px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .content {
+                float: left;
+                width: 75%;
+                height: 100%;
+                border-left: 2px solid green;
+                margin-left: 20px;
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 15px;
+                height: 50px;
+                width: 100%;
+                color: white;
+                text-align: center;
+            }
+
+            .footer p {
+                margin-top: 10px;
+            }
+
+            .content ul {
+                color: white;
+                margin-left: 50px;
+            }
+
+            h1 {
+                letter-spacing: 5px;
+                color: white;
+                width: 600px;
+                height: auto;
+                background-color: green;
+                margin-left: 20px;
+                text-indent: 100px;
+                font-style: italic;
+            }
+
+            h3 {
+                width: 300px;
+                height: auto;
+                margin-left: 20px;
+                text-indent: 10px;
+                color: white;
+                background-color: green;
+            }
+
+            hr {
+                border: 3px solid green;
+            }
+
+            .active {
+                background-color: rgba(0, 0, 0, 0.214);
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            <div class="header">
+                <div class="logo">
+                    <img src="../images/salogo.jpg" alt="" height="100%" />
+                </div>
+            </div>
+            <div class="body">
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="item"><a href="./home.html">Home</a></li>
+                        <li class="item"><a href="./maze.html">The Corn Maze</a></li>
+                        <li class="item"><a href="./haunter.html">The Haunted Maze</a></li>
+                        <li class="item active"><a href="./petting.html">Petting Bam</a></li>
+                        <li class="item"><a href="./produce.html">Produce</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <h1>The Petting Barn</h1>
+                    <br />
+                    <img src="../images/photo4.jpg" alt="" style="float: right" />
+                    <p style="color: white; margin-left: 20px">
+                        The Sunny Acres Petting Barn, conveniently located northeast of Council Bluffs, is a perfect
+                        setting for people of all ages to learn about farming and farm animals. At our farm you can
+                        enjoy over 100 friendly farm animals in a clean, relaxed, hands-on enviroment. The kids can
+                        bottle feed the baby goats, lambs, and calves in the Nursery and Bottle Baby pens.Come join us
+                        for a fun-filled day.
+                        <br />
+                        <br />
+                        Teachers: our Petting Barn is an educational experience. Stroll around our 15 acres of open
+                        pasture and see animals in their natural habitat. Special events can be arranged for school
+                        field trips and classroom activities. Pony rides are available Saturdays and Sundays from April
+                        through October (weather permitting). Maximum rider weight limit of 75 pounds, please.
+                        <br /><br />
+                        Bring a picnic lunch and stay the day or just enjoy a peaceful hour. Perfect for school or
+                        church groups, day-care centers, family outings, company picnics and especially birthday
+                        parties. Please come and enjoy our wonderful country atmosphere and relax! We invite you to come
+                        out and visit us often. There are always new and exciting events happening at Sunny Acres ...
+                        and that's just the way we like it!
+                    </p>
+
+                    <br />
+                    <h3>Hours</h3>
+                    <br />
+                    <ul>
+                        <li>Monday - Friday: 9 am - 4 pm</li>
+                        <li>Saturday - Sunday: 11am - 3 pm</li>
+                    </ul>
+                    <br />
+                    <h3>Directions</h3>
+                    <br />
+                    <ul>
+                        <li>Adult: $4.00</li>
+                        <li>Ages 2 - 12: $2.50</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <hr />
+                <br />
+                <hr />
+                <p>Sunny Acres ☀ Tammy & Brent Nielsen ☀ 1977 Highway G ☀ Council Bluffs, IA 51503</p>
+            </div>
+        </main>
+    </body>
+</html>

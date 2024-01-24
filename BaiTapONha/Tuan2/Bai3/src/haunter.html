@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Haunter</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .main {
+                position: relative;
+                height: 1000px;
+                background-image: url("../images/background.jpg");
+            }
+
+            .header {
+                height: 150px;
+                width: 100%;
+            }
+
+            .logo {
+                padding-top: 10px;
+                float: left;
+                margin-left: 10px;
+            }
+
+            .nav {
+                float: left;
+                margin-left: 10px;
+                width: 20%;
+                height: 100%;
+                margin-right: 10px;
+            }
+
+            .menu {
+                width: 100%;
+                height: 20%;
+                background-color: white;
+                border: 5px outset;
+            }
+
+            .menu .item {
+                list-style-type: none;
+                height: 30px;
+                padding-left: 10px;
+            }
+
+            .menu .item:hover {
+                background-color: rgba(0, 0, 0, 0.214);
+            }
+
+            .menu .item a {
+                text-decoration: none;
+                display: block;
+                color: purple;
+                line-height: 30px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .content {
+                float: left;
+                width: 75%;
+                height: 100%;
+                border-left: 2px solid green;
+                margin-left: 20px;
+            }
+
+            .footer {
+                position: absolute;
+                bottom: 15px;
+                height: 50px;
+                width: 100%;
+                color: white;
+                text-align: center;
+            }
+
+            .footer p {
+                margin-top: 10px;
+            }
+
+            .content ul {
+                color: white;
+                margin-left: 50px;
+            }
+
+            h1 {
+                letter-spacing: 5px;
+                color: white;
+                width: 600px;
+                height: auto;
+                background-color: green;
+                margin-left: 20px;
+                text-indent: 100px;
+                font-style: italic;
+            }
+
+            h3 {
+                width: 300px;
+                height: auto;
+                margin-left: 20px;
+                text-indent: 10px;
+                color: white;
+                background-color: green;
+            }
+
+            hr {
+                border: 3px solid green;
+            }
+
+            .active {
+                background-color: rgba(0, 0, 0, 0.214);
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            <div class="header">
+                <div class="logo">
+                    <img src="../images/salogo.jpg" alt="" height="100%" />
+                </div>
+            </div>
+            <div class="body">
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="item"><a href="./home.html">Home</a></li>
+                        <li class="item"><a href="./maze.html">The Corn Maze</a></li>
+                        <li class="item active"><a href="./haunter.html">The Haunted Maze</a></li>
+                        <li class="item"><a href="./petting.html">Petting Bam</a></li>
+                        <li class="item"><a href="./produce.html">Produce</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <h1>The Haunted Maze</h1>
+                    <br />
+                    <img src="../images/photo3.jpg" alt="" style="float: right" />
+                    <p style="color: white; margin-left: 20px">
+                        Back for another year, every night, the Sunny Acres Corn Maze becomes the Sunny Acres Haunted
+                        Maze. This season's maze begins with an encounter with an evil organist (played by the Council
+                        Bluff Choir's own Glenn Frye). Explore the maze and find the zombie graveyard, the pumpkin
+                        tower, and a haunted house made of corn, not to mention the spiders, ghosts, witches, and other
+                        assorted villainy that inhabit the maze.
+                        <br /><br />
+                        The Haunted Maze is open the last three weekends of October with a special event on Halloween.
+                        Come early in the day to explore the larger Corn Maze, stay for a homemade meal of brats and
+                        burgers, soda, and chips, and then participate in the Halloween Festival. Special stations will
+                        be set up in the Haunted Maze for trick-or-treaters. A smaller maze is also available that is
+                        "scare-friendly" for younger children.
+                    </p>
+
+                    <br />
+                    <h3>Hours</h3>
+                    <br />
+                    <ul>
+                        <li>Open 5 pm - 9 pm on October 14, 15, 21, 22, 28, and 29</li>
+                        <li>Halloween Festival October 31 from 3 pm - 9 pm</li>
+                    </ul>
+                    <br />
+                    <h3>Directions</h3>
+                    <br />
+                    <ul>
+                        <li>12 and over: $8.50</li>
+                        <li>6 - 11: $6.50</li>
+                        <li>Under 6: $2.50</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <hr />
+                <br />
+                <hr />
+                <p>Sunny Acres ☀ Tammy & Brent Nielsen ☀ 1977 Highway G ☀ Council Bluffs, IA 51503</p>
+            </div>
+        </main>
+    </body>
+</html>
