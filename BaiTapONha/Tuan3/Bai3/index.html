@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 3</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                position: relative;
+                max-width: 1100px;
+                border: 2px solid black;
+                margin: 0 auto;
+            }
+
+            .header .logo {
+                width: 100%;
+                font-size: 2.5rem;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+                height: 80px;
+                background-color: #be510b;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                font-weight: bold;
+                color: #626312;
+                text-shadow: -3px -4px 7px white;
+            }
+
+            .nav {
+                width: 100%;
+                color: #be510b;
+                height: 30px;
+                display: flex;
+                border: 1px solid black;
+            }
+
+            .nav .item {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                font-weight: bold;
+                margin: 0 20px;
+                width: 100px;
+            }
+
+            .header img {
+                width: 100%;
+                object-fit: fill;
+                height: 100px;
+            }
+
+            .content {
+                padding: 20px;
+                display: flex;
+            }
+
+            .form {
+                border-right: 1px solid #00000027;
+            }
+
+            .form .title {
+                color: #a8aa16;
+                margin-bottom: 20px;
+                letter-spacing: 3px;
+            }
+
+            .form .desc {
+                color: #a8aa16;
+                margin-left: 60px;
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+
+            .form input {
+                padding-left: 10px;
+                margin-left: 60px;
+                margin-bottom: 20px;
+                width: 320px;
+                height: 40px;
+                border: transparent;
+                outline: none;
+                border-bottom: 1px solid black;
+            }
+
+            .form button {
+                margin-left: 60px;
+                background-color: #a8aa16;
+                border: none;
+                color: white;
+                height: 30px;
+                width: 110px;
+                text-align: center;
+            }
+
+            .section {
+                width: 30%;
+            }
+
+            .section .links {
+                margin: 0 auto;
+                width: 224px;
+                background-color: #ffecba;
+                padding: 10px;
+                border-top-right-radius: 30px;
+                border-top-left-radius: 30px;
+                color: #be510b;
+            }
+
+            .section .links .title {
+                color: #626312;
+                margin-bottom: 30px;
+            }
+
+            .section .links .list {
+                list-style-type: square;
+                margin-left: 40px;
+            }
+
+            .section .more {
+                margin: 0 auto;
+                width: 226px;
+                padding: 10px;
+            }
+
+            .section .more .title {
+                color: #626312;
+                margin-bottom: 10px;
+            }
+
+            .section .more .desc div {
+                width: 115px;
+                height: 70px;
+                border: 1px solid rgba(0, 0, 0, 0.277);
+                padding: 10px;
+                display: inline-block;
+            }
+
+            .section .more .desc div img {
+                width: 100%;
+                vertical-align: text-top;
+                height: 100%;
+                object-fit: fill;
+            }
+
+            .footer {
+                position: relative;
+                text-align: center;
+                width: 100%;
+                line-height: 30px;
+                height: 40px;
+            }
+
+            .footer img {
+                position: absolute;
+                height: 100%;
+            }
+
+            .footer .corner4,
+            .footer .corner3 {
+                right: 0;
+            }
+
+            .footer .corner1,
+            .footer .corner2 {
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            <header class="header">
+                <div class="logo">AUTUMN TRAVEL COMPANY</div>
+                <nav class="nav">
+                    <div class="item">Home</div>
+                    <div class="item">About</div>
+                    <div class="item">Products</div>
+                    <div class="item">Services</div>
+                    <div class="item">Order</div>
+                </nav>
+                <img src="./line.png" alt="" />
+            </header>
+            <div class="content">
+                <div class="form">
+                    <h1 class="title">Sign up for membership benefits</h1>
+                    <div class="desc">
+                        Our philisophical are transparency, respect, formality and responsibility. Our stimulus is your
+                        enthusiasm. Our motto is your satisfation.
+                    </div>
+                    <form action="#">
+                        <input type="text" placeholder="Username" />
+                        <br />
+                        <input type="email" placeholder="E-mail" />
+                        <br />
+                        <input type="password" name="password" id="password" placeholder="Password" />
+                        <br />
+                        <input type="password" name="password" id="password" placeholder="Retype password" />
+                        <br />
+                        <br />
+                        <button type="submit">SIGN ME UP</button>
+                    </form>
+                </div>
+                <section class="section">
+                    <div class="links">
+                        <h1 class="title">Links</h1>
+                        <ul class="list">
+                            <li class="item">Make your Own Tour</li>
+                            <li class="item">Maldives Tours</li>
+                            <li class="item">Nature & Adventure</li>
+                            <li class="item">Readymade Tours</li>
+                            <li class="item">Europe Tours</li>
+                            <li class="item">Rusia Tours</li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <h1 class="title">More info</h1>
+                        <div class="desc">
+                            <div><img src="./leaf.png" alt="" /></div>
+                            Our purpose is the client who gives to us the opportunites to serve and to make known the
+                            reality arround the world
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="footer">
+                <img class="corner1" src="./corner1.png" alt="" />
+                <img class="corner2" src="./corner2.png" alt="" />
+                <img class="corner3" src="./corner3.png" alt="" />
+                <img class="corner4" src="./corner4.png" alt="" />
+                2017 Software Engineering Department Test Date 16 Sep 2017
+            </footer>
+        </main>
+    </body>
+</html>
