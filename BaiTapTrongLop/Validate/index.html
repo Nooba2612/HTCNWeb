@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đặng Phúc Nguyên - 22728691</title>
+        <style>
+            .main {
+                margin: 50px auto 0;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="validate-user-name">
+                <div class="title">Kiểm tra tên người dùng</div>
+                <input type="text" name="user-name" placeholder="Tên người dùng..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkUserName()">Kiểm tra</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="validate-password">
+                <div class="title">Kiểm tra mật khẩu</div>
+                <input type="password" name="password" placeholder="Nhập mật khẩu..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkPassword()">Kiểm tra</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="validate-email">
+                <div class="title">Kiểm tra email</div>
+                <input type="email" name="email" placeholder="Nhập email..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkEmail()">Kiểm tra</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="validate-ipv4">
+                <div class="title">Kiểm tra IPv4</div>
+                <input type="ipv4" name="ipv4" placeholder="Nhập địa chỉ ipv4..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkIPv4()">Kiểm tra</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="validate-hex">
+                <div class="title">Kiểm tra giá trị hex</div>
+                <input type="hex" name="hex" placeholder="Nhập giá trị hex..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkHexValue()">Kiểm tra</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="validate-slug">
+                <div class="title">Kiểm tra giá trị slug</div>
+                <input type="slug" name="slug" placeholder="Nhập giá trị slug..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkSlug()">Kiểm tra</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="validate-url">
+                <div class="title">Kiểm tra giá trị url</div>
+                <input type="url" name="url" placeholder="Nhập URL..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkURL()">Kiểm tra</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="validate-html">
+                <div class="title">Kiểm tra giá trị html</div>
+                <input type="html" name="html" placeholder="Nhập giá trị html..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkHTML()">Kiểm tra</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="validate-date">
+                <div class="title">Kiểm tra giá trị date</div>
+                <input type="text" name="date" placeholder="Nhập date..." />
+                <div style="color: red" class="notification"></div>
+                <button onclick="checkDate()">Kiểm tra</button>
+            </div>
+        </div>
+    </body>
+    <script src="./app.js"></script>
+</html>
